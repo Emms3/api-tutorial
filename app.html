@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="css/master.css">
 
 		<!-- app -->
+		<script src="javascript/app.js" type="text/javascript"></script>
 
 		<!-- Google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
@@ -26,12 +27,13 @@
 
 	</head>
 
-	<body>
+	<body onload="focus();">
 		<main class="container">
 			<h1>api Tutorial</h1>
 			<br>
 			<input type="text" name="userInput"
-				placeholder="Enter a name or + to display all" />
+				placeholder="Enter a name or + to display all"
+				onkeyup="app();"/>
 			<div class="outputParent">
 				<!-- placeholder -->
 			</div>
